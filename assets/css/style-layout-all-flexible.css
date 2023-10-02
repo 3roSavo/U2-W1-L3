@@ -30,7 +30,6 @@ nav ul {
     list-style-type: none;
     align-content: space-around;
     height:250px
-
 }
 
 ul img {
@@ -43,7 +42,6 @@ li {
     padding: 15px 0px;
     border-radius: 40px;
     width:40%;
-
 }
 
 ul li:nth-of-type(3) {
@@ -67,7 +65,7 @@ h1 {
 }
 
 #product-info h3 {
-    margin:opx;
+    margin:0px;
     padding: 0px;
 }
 
@@ -89,12 +87,11 @@ main {
 
 .card-container {
     width: 100%;
-    /* height: 400px; */
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items:center;
     margin-bottom: 40px;
-    
 }
 
 
@@ -163,6 +160,102 @@ h2 {
     margin-top: 15px;
     width: 100%;
 }
+
+
+@media screen and (min-width : 750px) {
+
+    #right-side {
+        width:80%;
+    }
+
+    body {
+        display: flex;
+
+    }
+    ul img {
+        width:40px;
+    }
+
+    nav {
+        background-color: rgb(251,247,227);
+        display: flex;
+        justify-content:center ;
+        padding:20px 10px;
+        margin:0px 0px;
+        border-radius:0px;
+        width:20%;
+        position:sticky;
+        height: 100vh;
+        top:0;
+    }
+    nav ul {
+        margin: 0;
+        padding: 0 10px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+        list-style-type: none;
+        align-content: space-around;
+        height:550px;
+        width:100%;
+    }
+    ul li:nth-of-type(3) {
+        display: flex;
+        order:-1;
+        align-items: center;
+        justify-content:center;
+        /* width:100%; */
+        padding: 30px 0px;
+        border-radius: 54px;
+        font-weight: bold;
+        font-size:1.2em ;
+    }
+    li {
+        text-align: center;
+        background-color: rgb(243,223,133);
+        padding: 30px 0px;
+        border-radius: 40px;
+        width:100%;
+        font-size: 1.2em;
+    }
+    .card-container {
+        width: 30%;
+        display: flex;
+        margin-bottom: 40px;
+    }
+    article img {
+        height: 220px;
+        width: 100%;
+    }
+    article {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width:400px;
+        height: 380px;
+        background-color: rgb(251,247,227);
+        border-radius: 50px;
+        overflow: hidden;
+    }
+    #all-cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #all-cards .card-container:nth-child(5), #all-cards .card-container:nth-child(4) {
+        display: none;
+    }
+    article button {
+        width:60%;
+        background-color: rgb(243,223,133);
+        border-radius: 25px;
+        border: none;
+        padding:10px 0px;
+    }
+}
+
 
 
 
